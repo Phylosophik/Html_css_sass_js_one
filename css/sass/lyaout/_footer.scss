@@ -1,0 +1,105 @@
+.footer{
+    background-color: $coloreee;
+    margin-top: 40px;
+    .container{
+        .sous-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$maxMobil} {
+            flex-direction: column;
+        }
+        .latest{ 
+            h3{
+                margin: 20px 10px;
+                width: fit-content;
+            }
+            &:first-child{
+                @media #{$maxMobil} {
+                    margin: 10px auto;
+                }
+            }
+            &:nth-child(2){
+                margin: 0 30px;
+                @media #{$maxMobil}{
+                    text-align: center;
+                }
+            }
+            &:last-child{
+                margin: 0 auto;
+                @media #{$maxMobil}{
+                    margin: 10px auto;
+                }
+            }
+            .first-l{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+               @media #{$maxMobil} {
+                   flex-direction: column;
+               }
+                img{
+                    width: 30%;
+                   
+                }
+                .latest-content{
+                    margin: 0 20px ;
+                    @media #{$maxMobil} {
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    h4{
+                        color: $redColor;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        color: #777;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            ul{ 
+                li{
+                    margin: 10px 0;
+                    color: #777;
+                    span{
+                        color: $redColor;
+                        font-size: 13px;
+                    }
+                }
+            }
+            input:not([type=submit]){
+                
+                height: 37px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                  width:100%
+            }
+            textarea{
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                width: 100%;
+                height: 130px;
+            }
+        }
+    }
+        .copyright{
+            border-top: 1px solid #333;
+            margin-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+            @media #{$maxMobil} {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}

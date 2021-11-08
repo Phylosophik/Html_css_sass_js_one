@@ -1,0 +1,91 @@
+.slider{
+    .container{
+        q{
+            display: block;
+            width: 80%;
+            margin: 30px auto;
+            text-align: center;
+            font:{
+                family:tahoma;
+                size: 17px;
+                weight:bold;
+                style:italic
+            }
+            color: $color333;
+            line-height: 1.7;
+        }
+        img{
+            width:100%;
+            height: 400px;
+        }
+        .bollet{
+            display: flex;
+            justify-content: center;
+            li{
+                width: 15px;
+                height: 15px;
+                border: 2px solid $color777;
+                border-radius: 50%;
+                margin: 5px;
+                background-color: $coloreee;
+                &.active{
+                    border: 2px solid $color333;
+                    background-color: $coloreee;
+                }
+            }
+        }
+    }
+}
+
+.service-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    .service{
+        @include prefixer(box-shadow,5px 0px 5px 4px $coloreee,webkit moz o);
+        line-height: 1.5;
+        color: $color777;
+        padding: 5px;
+        h3{
+           i{
+               margin: 20px;
+               color: $color333;
+           }
+        }
+        a{
+            color: $redColor;
+        }
+    }
+}
+.service-second{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 20px;
+    .service{
+        @include prefixer(box-shadow,5px 0px 5px 4px $coloreee,webkit moz o);
+        line-height: 1.5;
+        color: $color777;
+        padding: 5px;
+        img{
+            width: 100%;
+        }
+        h3{
+               margin: 10px 0;
+               color: $color777;
+        }
+        a{
+            color: $redColor;
+        }
+    }
+}
+.service-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    .service{
+        @include prefixer(box-shadow,5px 0px 5px 4px $coloreee,webkit moz o);
+        img{
+            width: 100%;
+        }
+    }
+}

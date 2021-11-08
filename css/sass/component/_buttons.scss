@@ -1,0 +1,34 @@
+.submit{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($redColor,.5);
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    padding:5px ;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+        background-color: $redColor;
+    }
+}
+.header{
+    .container{
+           .toggler{
+            @media #{$maxMobil} {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                transform: scaleY(1);
+                max-height: 100vh;
+                border-radius: 0;
+            }
+        }
+    } 
+}
+
